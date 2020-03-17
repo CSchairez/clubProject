@@ -1,0 +1,232 @@
+html {
+    height: 100%;
+    background: #ffd89b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #19547b, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+/* Nav Styling */
+#MenuList {
+    background-color: cadetblue;
+    border: dodgerblue;
+    border-radius: 15px;
+    border-style: double;
+    max-width: fit-content;
+    padding-right: 2em;
+    /* font styling */
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    }
+#MenuList {
+    display: none;
+    }
+#MenuList.show-menu {
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+nav ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+a:link {
+    color: black;
+}
+a:hover {
+    color: bisque;
+}
+
+footer {
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;   
+}
+h1 {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+
+/* index.html styling */
+.index-div p {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+.indexImgCap {
+    text-align: center;
+}
+.index-div h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    font-size: 33px;
+    border-radius: 10px;
+    color: white;
+    opacity: .8;
+    text-align: center;
+}
+
+
+/* about.html styling */
+.about-page h2{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    font-size: 33px;
+    border-radius: 10px;
+    color: white;
+    opacity: .8;
+    text-align: center;
+}
+.about-page header p {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    opacity: .8;
+}
+
+
+/* Activities page styling   */
+.Restricted{
+    display: flex;
+    max-height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: .75;
+}
+.activitiesImg {
+    display: flex;
+    max-height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: .75;
+}
+.activImgCap {
+    text-align: center;
+}
+.activities-page header p {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    opacity: .8;
+}
+.activities-page li {
+    border: 3px solid lightblue;
+    background-color: rgba(247, 234, 235, 0.3);
+    font-family: Arial,
+        Helvetica,
+        sans-serif;
+    padding: 5px;
+   text-align: center;
+   margin: auto;
+}
+.activities-page header h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    font-size: 33px;
+    border-radius: 10px;
+    height: 5;
+    color: white;
+    opacity: .8;
+    text-align: center;
+}
+/* Login.html stlying */
+
+.login-header {
+    text-align: center;
+    font-size: 33px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.login-body {
+    display: grid;
+}
+.login-container {
+    background-color: honeydew;
+    border: solid black;
+    border-width: 5px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 2em;
+    width: 15%;
+    opacity: .9;
+    height: fit-content;
+}
+
+/* Modal sytling */
+
+a:link,
+a:visited{
+ text-decoration: solid purple;
+}
+.modal{
+    background-color: rgba(0,0,0, .8);
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+   } 
+.modal-content{
+    width: 30%;
+    height: 30%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    border-radius: 1em;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+   }
+ #modal:target{
+    opacity: 1;
+    visibility: visible;
+   }
+ #modal:target .modal-content{
+    opacity: 1;
+    visibility: visible;
+   }
+ .modal-close{
+    color: #363636;
+    font-size: 1em;
+    position: absolute;
+    top: .5em;
+    right: 1em;
+   }
+ .modal-heading{
+    color: dodgerblue;
+    margin-bottom: 1em;
+   }
+ .modal-paragraph{
+    font-weight: bold;
+   }
+ .modal-open{
+  display: inline-block;
+  color: black;
+  margin-top: 5px;
+  background-color: lightgray;
+  width: 50px;
+ }
+
+ /* Sign Up styling */
+
+ .signUp-container {
+    display: grid;
+    height: fit-content;
+    background-color: honeydew;
+    border: solid black;
+    border-width: 5px;
+    border-radius: 10px;
+    margin: auto;
+    width: 25%;
+    padding: 2em;
+    opacity: .9;
+ }

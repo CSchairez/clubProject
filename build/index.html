@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Computer Science Activities Club</title>
+        <link href="/clubProject/club.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/8d4dbcbe61.js" crossorigin="anonymous"></script>
+        <script src="/clubProject/eventData.js"></script>
+    </head>
+    <body>
+    <nav>
+      <nav class="nav-bar">
+  <i id="MenuButton" class="fas fa-bars"></i>
+    <ul id="MenuList">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutMe.html">About</a></li>
+      <li><a href="clubActivities.html">Club Activities</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signUp.html">Membership</a></li>
+    </ul>
+</nav>
+    </nav>
+    <main>
+        
+    <main>
+        
+
+        <h1> 💾  Welcome to the Computer Science Activities Club 💻</h1>
+
+        <figure>
+            <img src="indexImage.jpg" class="Restricted" alt="index image">
+            <figcaption class="indexImgCap"> Work and Team-Build with the best future engineers on Campus!  </figcaption>
+        </figure>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
+            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like 
+            Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+            
+        <h2> Over 1,000 Members and counting!</h2>
+    </div>
+    <script>
+        var menuB, menuList;
+        function showMenu(event) {
+            event.stopPropagation();
+            menuList.classList.toggle("show-menu");
+        }
+        function init() {
+            menuB = document.getElementById("MenuButton");
+            menuB.addEventListener("click", showMenu);
+            menuList = document.getElementById("MenuList");
+            menuList.addEventListener('click', ()=>menuList.classList.remove("show-menu"));
+            document.addEventListener('keydown',()=>menuList.classList.remove("show-menu"));
+            document.addEventListener('click',()=>menuList.classList.remove("show-menu"));
+        }
+        window.addEventListener("load", init);
+    
+    </script>
+
+
+
+    </main>
+    <footer>Copyright © 2020. Michael Chairez. Michaels Computer Science Club.</footer>
+    </body>
+</html>

@@ -1,0 +1,7 @@
+[
+    {"fname": "index.html", "title": "Computer Science Activities Club"},
+    {"fname": "aboutMe.html", "title": "About the Club"},
+    {"fname": "clubActivities.html", "title": "Club Activities"},
+    {"fname": "login.html", "title": "Member Login"},
+    {"fname": "signUp.html", "title": "Join Us!"}
+]

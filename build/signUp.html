@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Computer Science Activities Club</title>
+        <link href="/clubProject/club.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/8d4dbcbe61.js" crossorigin="anonymous"></script>
+        <script src="/clubProject/eventData.js"></script>
+    </head>
+    <body>
+    <nav>
+      <nav class="nav-bar">
+  <i id="MenuButton" class="fas fa-bars"></i>
+    <ul id="MenuList">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutMe.html">About</a></li>
+      <li><a href="clubActivities.html">Club Activities</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signUp.html">Membership</a></li>
+    </ul>
+</nav>
+    </nav>
+    <main>
+        
+        <div class="signup-header">
+            <h1>Computer Science Activities Club</h1>
+        </div>
+        <div class="signUp-container">
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account.</p>
+
+            <label for="name"><b>Name: </b></label>
+            <input type="text" placeholder="Enter Name" name="name" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="fav-activs">Enter your favorite things to do.</label>
+            <textarea id="fav-activs" rows="3" cols="50"></textarea>
+            <label for="fav-tech">Enter your favorite languages or technologies.</label>
+            <textarea id="fav-activs" rows="3" cols="50"></textarea>
+            <a href="#modal" class="modal-open">Submit</a>
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <a href="#" class="modal-close">close</a>
+                <h2 class="modal-heading">Thank You!</h2>
+                <p class="modal-paragraph">Check your email for the status of your application.</p>
+            </div>
+        </div>
+
+        <script>
+            var menuB, menuList;
+            function showMenu(event) {
+                event.stopPropagation();
+                menuList.classList.toggle("show-menu");
+            }
+            function init() {
+                menuB = document.getElementById("MenuButton");
+                menuB.addEventListener("click", showMenu);
+                menuList = document.getElementById("MenuList");
+                menuList.addEventListener('click', ()=>menuList.classList.remove("show-menu"));
+                document.addEventListener('keydown',()=>menuList.classList.remove("show-menu"));
+                document.addEventListener('click',()=>menuList.classList.remove("show-menu"));
+            }
+            window.addEventListener("load", init);
+        
+        </script>
+
+    
+
+    </main>
+    <footer>Copyright © 2020. Michael Chairez. Michaels Computer Science Club.</footer>
+    </body>
+</html>

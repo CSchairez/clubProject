@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Computer Science Activities Club</title>
+        <link href="/clubProject/club.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/8d4dbcbe61.js" crossorigin="anonymous"></script>
+        <script src="/clubProject/eventData.js"></script>
+    </head>
+    <body>
+    <nav>
+      {% include "nav.html" %}
+    </nav>
+    <main>
+        {{contents | safe}}
+    </main>
+    <footer>Copyright © 2020. Michael Chairez. Michaels Computer Science Club.</footer>
+    </body>
+</html>
